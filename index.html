@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- MDUI CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+    <link rel="stylesheet" href="https://bdovo.cc/mdui.css">
+    <title>主页 - 笨蛋ovo</title>
+    <style type="text/css">
+      /* 卡片顶部间距 */
+      .mdui-container{
+        padding-top: 16px;
+      }
+      /* 侧边栏版权说明置底 */
+      .copyright {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        right: 0;
+        height: 160px;
+      }
+      .copyright2 {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+        right: 0;
+        height: 140px;
+      }
+    .div1 {
+        width: 640px;
+        height: 300px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .div1 img  {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+    }
+    .div2 {
+        width: 500px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .div2 img  {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+    }
+    .div3 {
+        width: 500px;
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .div3 img  {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+    }
+    .div4 {
+        width: 640px;
+        height: 280px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .div4 img  {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+    }
+    </style>
+  </head>
+  <body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-indigo mdui-loaded">
+    <!-- 顶栏 -->
+    <header class="mdui-appbar mdui-appbar-fixed">
+      <div class="mdui-toolbar mdui-color-indigo">
+        <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer', swipe: true}">
+          <i class="mdui-icon material-icons">menu</i>
+        </a>
+        <a href="javascript:;" class="mdui-typo-title">主页</a>
+        <div class="mdui-toolbar-spacer"></div>
+        <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon">
+          <i class="mdui-icon material-icons">refresh</i>
+        </a>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#menu1'}">
+          <i class="mdui-icon material-icons">more_vert</i>
+        </a>
+        <!-- 顶栏右侧菜单 -->
+        <ul class="mdui-menu" id="menu1">
+          <li class="mdui-menu-item">
+            <a href="javascript:location.reload();;" class="mdui-ripple">刷新</a>
+          </li>
+          <li class="mdui-menu-item" disabled>
+            <a href="javascript:;">Nothing here.</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- 侧边栏 -->
+    <div class="mdui-drawer" id="drawer">
+      <ul class="mdui-list">
+        <li class="mdui-list-item mdui-ripple mdui-list-item-active" onclick="location.reload();">
+          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+          <div class="mdui-list-item-content">主页</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href = 'https://bdovo.cc/friends.html'">
+            <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+            <div class="mdui-list-item-content">友情链接</div>
+          </li>
+          <hr>
+        <li class="mdui-list-item mdui-ripple " onclick="window.open('https://bdovo.cc/old_index.html');">
+          <i class="mdui-list-item-icon mdui-icon material-icons">insert_drive_file</i>
+          <div class="mdui-list-item-content">旧版主页</div>
+        </li>
+      </ul>
+      <!-- 侧边栏底部 版权说明 -->
+      <div class="copyright mdui-typo mdui-typo-body-1-opacity">
+        <hr/>
+      </div>
+      <div class="copyright2 mdui-typo mdui-typo-body-1-opacity">
+        <p>© 2022 笨蛋ovo<br>Powered by <a href="https://mdui.org" target="_blank">MDUI</a>
+        </br>本站使用了<a href="https://bing.ioliu.cn/" target="_blank">必应每日壁纸接口</a><br><a href="https://genshin-card.getloli.com/" target="_blank">原神玩家卡片接口</a>以及<a href="https://hitokoto.cn/" target="_blank">一言接口</a><br>在此表示感谢
+        </p>
+        </div>
+    </div>
+<!-- 正文内容 -->
+<div>
+    <!-- 正文顶部卡片 -->
+    <div class="mdui-container">
+      <div class="mdui-row">
+        <div class="mdui-col-sm-6 mdui-col-md-6">
+          <div class="mdui-card">
+            <!-- 个人介绍卡片 -->
+            <div class="mdui-card-header">
+              <img class="mdui-card-header-avatar" src="https://bdovo.cc/avatar.jpg"/>
+              <div class="mdui-card-header-title">笨蛋ovo</div>
+              <div class="mdui-card-header-subtitle">一个高中生的个人主页</div>
+            </div>
+            <!-- 必应每日壁纸 -->
+            <div class="mdui-card-media div4">
+              <img src="https://bing.ioliu.cn/v1/rand?w=640&h=420"/>
+            </div>
+            <!-- 一言 默认语句 -->
+            <div class="mdui-card-content hitokoto">给岁月以文明，而不是给文明以岁月。——《三体》刘慈欣</div>
+          </div>
+        </div>
+        <div style="margin-top:16px"></div>
+        <div class="mdui-col-sm-6 mdui-col-md-6">
+            <div class="mdui-card">
+              <!-- 卡片的标题和副标题 -->
+              <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">原神卡片</div>
+                <div class="mdui-card-primary-subtitle">我超，⚪</div>
+              </div>
+              <!-- 卡片的内容 -->
+              <div class="mdui-card-content div1"><img src="https://genshin-card.getloli.com/rand/289540492.png"><img src="https://genshin-card.getloli.com/rand/300231178.png"></div>
+            </div>
+        </div>
+      </div>
+      <div style="margin-top:16px"></div>
+      <div class="mdui-row">
+        <div class="mdui-col-sm-6 mdui-col-md-6">
+          <div class="mdui-card">
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content div3"><img src="https://github-readme-stats.vercel.app/api?username=liuran001&count_private=true&theme=vue&show_icons=true&hide_border=true"></div>
+          </div>
+        </div>
+        <div style="margin-top:16px"></div>
+        <div class="mdui-col-sm-6 mdui-col-md-6">
+          <div class="mdui-card">
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content div2"><img src="https://count.getloli.com/get/@bdovo.cc?theme=asoul"></div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom:16px"></div>
+      </div>
+
+
+    <!-- MDUI JavaScript -->
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <!-- JQuery JavaScript -->
+    <!-- 一言需要 -->
+    <script src="https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js"></script>
+      <script>
+        // 一言接口
+        $(function () {
+          $.getJSON("https://v1.hitokoto.cn/", function(e){
+          $('.hitokoto').html(e.hitokoto+" —— <strong>"+e.from+"</strong>")
+          });
+        });
+    </script>
+  </body>
+</html>
